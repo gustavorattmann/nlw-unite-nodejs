@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Summit",
-    "details": "Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "title": "Novo Evento 2",
+    "details": null,
+    "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/4a1302c4-b361-4127-9c9e-83d1585da14f/attendees
+Content-Type: application/json
+
+{
+    "name": "Gustavo Rattmann",
+    "email": "gustavo_rattmann2@hotmail.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/21bcef3a-738c-4d0f-b75d-9cf02d61214e
+
+###
+
+GET http://localhost:3333/attendees/4/badge
